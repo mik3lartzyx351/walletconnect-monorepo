@@ -22,8 +22,6 @@
     "bootstrap": "npm install && run-s bootstrap:monorepo bootstrap:example",
     "bootstrap:monorepo": "lerna bootstrap --hoist",
     "bootstrap:example": "cd example && npm install",
-    "build": "lerna run build",
-    "test": "lerna run test",
     "lint": "eslint -c './.eslintrc' --fix 'packages/*/*/**/*.ts'",
     "clean": "rm -rf dist && lerna run clean",
     "clean:node_modules": "lerna exec -- rm -rf node_modules",
